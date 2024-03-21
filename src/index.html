@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete emails from gmail</title>
+    <script src="popup.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Delete Unread Emails</h1>
+        <p> This extension deletes the messages every 10 seconds </p>
+        <label for="emailCount">Enter the number of emails to delete:</label>
+        <input type="number" id="emailCount" name="emailCount" min="1" value="1">
+        <label for="skipWord">Word to skip deletion:</label>
+        <input type="text" id="skipWord" placeholder="Enter the word to skip deletion">
+        <button id="deleteButton">Delete</button>
+        <div id="processedData"></div>
+    </div>
+    
+</body>
+
+</html>
